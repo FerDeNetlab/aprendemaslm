@@ -37,11 +37,11 @@ const Hero = () => {
                 <div className="relative group animate-in fade-in slide-in-from-right-8 duration-700 mt-8 lg:mt-0 xl:p-8">
                     <div className="absolute -inset-4 bg-gradient-to-tr from-aprende-blue/20 to-aprende-pink/20 rounded-3xl blur-2xl group-hover:scale-105 transition-transform duration-500" />
                     <div className="relative aspect-square md:aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-2xl bg-white flex items-center justify-center p-8 md:p-12 border-8 border-white">
-                        <div className="w-full h-full bg-aprende-yellow/5 rounded-2xl flex flex-col items-center justify-center text-center p-4">
+                        <div className="w-full h-full bg-aprende-yellow/5 rounded-2xl flex items-center justify-center p-0">
                             <img
                                 src="/logo.svg"
                                 alt="Aprende+ Branding"
-                                className="w-full h-auto max-w-[320px] lg:max-w-xl drop-shadow-2xl animate-float"
+                                className="w-[85%] h-auto drop-shadow-2xl animate-float"
                             />
                         </div>
                     </div>
