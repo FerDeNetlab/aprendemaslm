@@ -8,12 +8,20 @@ const About = () => {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-aprende-green/10 rounded-full blur-3xl -z-10" />
                     <div className="grid grid-cols-2 gap-4">
                         <div className="space-y-4 pt-12">
-                            <div className="aspect-square bg-aprende-blue rounded-3xl flex items-center justify-center text-4xl shadow-xl transform hover:-rotate-3 transition-transform">🎨</div>
-                            <div className="aspect-video bg-aprende-pink rounded-3xl flex items-center justify-center text-4xl shadow-xl transform hover:rotate-2 transition-transform">🎒</div>
+                            <div className="aspect-square bg-aprende-blue rounded-3xl overflow-hidden shadow-xl transform hover:-rotate-3 transition-transform">
+                                <img src="/2.jpeg" alt="Actividades Aprende+" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="aspect-video bg-aprende-pink rounded-3xl overflow-hidden shadow-xl transform hover:rotate-2 transition-transform">
+                                <img src="/3.jpeg" alt="Clases Aprende+" className="w-full h-full object-cover" />
+                            </div>
                         </div>
                         <div className="space-y-4">
-                            <div className="aspect-video bg-aprende-yellow rounded-3xl flex items-center justify-center text-4xl shadow-xl transform hover:rotate-3 transition-transform">🧩</div>
-                            <div className="aspect-square bg-aprende-green rounded-3xl flex items-center justify-center text-4xl shadow-xl transform hover:-rotate-2 transition-transform">🖍️</div>
+                            <div className="aspect-video bg-aprende-yellow rounded-3xl overflow-hidden shadow-xl transform hover:rotate-3 transition-transform">
+                                <img src="/4.jpeg" alt="Material Aprende+" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="aspect-square bg-aprende-green rounded-3xl overflow-hidden shadow-xl transform hover:-rotate-2 transition-transform">
+                                <img src="/5.jpeg" alt="Aprendizaje Aprende+" className="w-full h-full object-cover" />
+                            </div>
                         </div>
                     </div>
                 </div>
