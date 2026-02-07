@@ -6,14 +6,14 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md border-b border-gray-100 h-20">
-            <div className="max-container flex items-center justify-between h-full relative">
+        <nav className="fixed top-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md border-b border-gray-100 h-24 lg:h-28">
+            <div className="max-container flex items-center justify-between h-full">
                 <div className="flex items-center">
-                    <a href="#inicio" className="relative h-20 flex items-center">
+                    <a href="#inicio" className="flex items-center">
                         <img
                             src="/logo.svg"
                             alt="Aprende+ Logo"
-                            className="absolute left-0 h-40 lg:h-48 w-auto object-contain transform origin-left drop-shadow-lg"
+                            className="h-24 lg:h-36 w-auto object-contain drop-shadow-md py-2"
                         />
                     </a>
                 </div>
