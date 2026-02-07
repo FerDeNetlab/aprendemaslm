@@ -12,7 +12,7 @@ const Navbar = () => {
                     <img
                         src="/logo.svg"
                         alt="Aprende+ Logo"
-                        className="h-10 lg:h-12 w-auto object-contain"
+                        className="h-14 lg:h-20 w-auto object-contain py-2"
                     />
                 </div>
 
@@ -43,11 +43,11 @@ const Navbar = () => {
 
             {/* Mobile menu panel */}
             {isOpen && (
-                <div className="md:hidden border-t border-gray-100 bg-white p-6 space-y-4 animate-in slide-in-from-top-4 duration-300">
-                    <a href="#inicio" onClick={() => setIsOpen(false)} className="block font-sans font-medium text-xl text-gray-600">Inicio</a>
-                    <a href="#servicios" onClick={() => setIsOpen(false)} className="block font-sans font-medium text-xl text-gray-600">Servicios</a>
-                    <a href="#nosotros" onClick={() => setIsOpen(false)} className="block font-sans font-medium text-xl text-gray-600">Nosotros</a>
-                    <a href="#contacto" onClick={() => setIsOpen(false)} className="block w-full text-center bg-aprende-pink text-white py-4 rounded-2xl font-display font-bold">
+                <div className="md:hidden border-t border-gray-100 bg-white p-8 space-y-6 animate-in slide-in-from-top-4 duration-300">
+                    <a href="#inicio" onClick={() => setIsOpen(false)} className="block font-sans font-bold text-2xl text-gray-800">Inicio</a>
+                    <a href="#servicios" onClick={() => setIsOpen(false)} className="block font-sans font-bold text-2xl text-gray-800">Servicios</a>
+                    <a href="#nosotros" onClick={() => setIsOpen(false)} className="block font-sans font-bold text-2xl text-gray-800">Nosotros</a>
+                    <a href="#contacto" onClick={() => setIsOpen(false)} className="block w-full text-center bg-aprende-pink text-white py-5 rounded-2xl font-display font-bold text-xl">
                         Inscribirme
                     </a>
                 </div>

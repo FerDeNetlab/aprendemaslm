@@ -2,15 +2,15 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section id="contacto" className="py-16 bg-aprende-yellow/10">
+        <section id="contacto" className="py-24 lg:py-32 bg-aprende-yellow/10">
             <div className="max-container">
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
                     <div className="space-y-12">
                         <div className="space-y-4">
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-black text-gray-900">
+                            <h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-black text-gray-900">
                                 ¿Listo para <span className="text-aprende-blue">empezar?</span>
                             </h2>
-                            <p className="text-lg lg:text-xl text-gray-600 font-sans leading-relaxed">
+                            <p className="text-xl lg:text-3xl text-gray-600 font-sans leading-relaxed">
                                 Agenda hoy mismo una valoración sin costo y descubre cómo podemos potenciar el talento de tus hijos.
                             </p>
                         </div>
@@ -31,8 +31,8 @@ const Contact = () => {
                                     📍
                                 </div>
                                 <div>
-                                    <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">Ubicación</p>
-                                    <p className="text-xl font-display font-bold text-gray-800">
+                                    <p className="text-lg font-bold text-gray-400 uppercase tracking-widest">Ubicación</p>
+                                    <p className="text-xl lg:text-2xl font-display font-bold text-gray-800">
                                         C. Santos Degollado entre Serdan y Rendon #219, planta alta, Col. Centro, Los Mochis.
                                     </p>
                                 </div>
