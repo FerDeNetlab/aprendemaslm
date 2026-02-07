@@ -52,10 +52,14 @@ const Contact = () => {
                     </div>
 
                     <div className="bg-white p-8 rounded-[40px] shadow-2xl shadow-aprende-yellow/20 border-8 border-white">
-                        <div className="aspect-video bg-gray-100 rounded-3xl mb-8 flex items-center justify-center text-4xl overflow-hidden relative">
-                            {/* Visual placeholder for Map or Image */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-aprende-blue/10 to-transparent" />
-                            🗺️
+                        <div className="aspect-video bg-gray-100 rounded-3xl mb-8 overflow-hidden relative border border-gray-100 shadow-inner">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.335373642913!2d-108.9870844!3d25.7925076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2fc9f92c4497%3A0xd8e98402f50f8c31!2sClub%20Aprende%20Mas!5e0!3m2!1ses-419!2smx!4v1770434689567!5m2!1ses-419!2smx"
+                                className="w-full h-full border-0"
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
                         </div>
                         <div className="space-y-6">
                             <div className="p-6 bg-aprende-green/5 rounded-2xl border border-aprende-green/10">
