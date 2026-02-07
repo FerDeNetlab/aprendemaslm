@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className="flex items-center">
                     <a href="#inicio" className="flex items-center">
                         <img
-                            src="/logo.svg"
+                            src="/logo.png"
                             alt="Aprende+ Logo"
                             className="h-24 lg:h-36 w-auto object-contain drop-shadow-md py-2"
                         />

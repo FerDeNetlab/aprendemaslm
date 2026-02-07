@@ -39,7 +39,7 @@ const Hero = () => {
                     <div className="relative aspect-square md:aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-2xl bg-white flex items-center justify-center p-8 md:p-12 border-8 border-white">
                         <div className="w-full h-full bg-aprende-yellow/5 rounded-2xl flex items-center justify-center p-0">
                             <img
-                                src="/logo.svg"
+                                src="/logo.png"
                                 alt="Aprende+ Branding"
                                 className="w-full h-auto scale-150 drop-shadow-2xl animate-float"
                             />
