@@ -8,11 +8,11 @@ const Navbar = () => {
     return (
         <nav className="fixed top-0 left-0 right-0 z-[100] bg-white/90 backdrop-blur-md border-b border-gray-100">
             <div className="max-container flex items-center justify-between h-16 lg:h-20">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center -ml-2">
                     <img
                         src="/logo.svg"
                         alt="Aprende+ Logo"
-                        className="h-12 lg:h-14 w-auto object-contain"
+                        className="h-16 lg:h-24 w-auto object-contain"
                     />
                 </div>
 
