@@ -13,7 +13,7 @@ const Navbar = () => {
                         <img
                             src="/logo.svg"
                             alt="Aprende+ Logo"
-                            className="h-28 lg:h-36 w-auto object-contain transform -translate-x-4 drop-shadow-md"
+                            className="absolute left-0 h-40 lg:h-48 w-auto object-contain transform origin-left drop-shadow-lg"
                         />
                     </a>
                 </div>
