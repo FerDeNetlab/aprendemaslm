@@ -9,12 +9,11 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-[100] bg-white/90 backdrop-blur-md border-b border-gray-100">
             <div className="max-container flex items-center justify-between h-16 lg:h-20">
                 <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 bg-aprende-blue rounded-xl flex items-center justify-center font-display font-bold text-white text-2xl">
-                        A+
-                    </div>
-                    <span className="font-display font-bold text-2xl tracking-tight text-gray-800">
-                        Aprende<span className="text-aprende-blue">+</span>
-                    </span>
+                    <img
+                        src="/logo.svg"
+                        alt="Aprende+ Logo"
+                        className="h-10 lg:h-12 w-auto object-contain"
+                    />
                 </div>
 
                 {/* Mobile menu button */}

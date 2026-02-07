@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     title: "Aprende+ | Regularización y Club Educativo en Los Mochis",
     description: "Impulsamos el aprendizaje de tus hijos con un enfoque divertido y profesional en Los Mochis.",
     images: ["/og-image.png"],
+  },
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   }
 };
 
