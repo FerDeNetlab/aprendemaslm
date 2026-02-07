@@ -41,7 +41,7 @@ const Hero = () => {
                             <img
                                 src="/logo.svg"
                                 alt="Aprende+ Branding"
-                                className="w-[110%] scale-110 h-auto drop-shadow-2xl animate-float"
+                                className="w-full h-auto scale-150 drop-shadow-2xl animate-float"
                             />
                         </div>
                     </div>
