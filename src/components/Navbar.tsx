@@ -13,7 +13,7 @@ const Navbar = () => {
                         <img
                             src="/logo.png"
                             alt="Aprende+ Logo"
-                            className="h-24 lg:h-36 w-auto object-contain drop-shadow-md py-2"
+                            className="h-28 lg:h-44 w-auto object-contain drop-shadow-2xl py-2 transform translate-y-8 lg:translate-y-12 transition-transform duration-300"
                         />
                     </a>
                 </div>
