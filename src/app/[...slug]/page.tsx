@@ -10,7 +10,7 @@ interface Props {
     params: Promise<{ slug: string[] }>;
 }
 
-const EXCLUDED_PATHS = ['sitemap.xml', 'robots.txt'];
+const EXCLUDED_PATHS = ['sitemap.xml', 'sitemap', 'robots.txt'];
 
 export async function generateStaticParams() {
     const csvPath = path.join(process.cwd(), 'sitemap_regularizacion_escolar_3000_los_mochis.csv');
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `${capitalized} | Aprende+ Los Mochis`,
         description: `Aprende+ ofrece servicios de ${decoded} con un enfoque profesional y divertido. Especialistas en apoyo escolar en Los Mochis, Sinaloa.`,
         alternates: {
-            canonical: `https://clubaprendemas.com/${slug.join('/')}`,
+            canonical: `https://www.clubaprendemas.com/${slug.join('/')}`,
         }
     };
 }

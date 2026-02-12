@@ -15,6 +15,7 @@ const outfit = Outfit({
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.clubaprendemas.com'),
   title: "Aprende+ | Regularización y Club Educativo en Los Mochis",
   description: "Clases de regularización, matemáticas, español e inglés en Los Mochis. Apoyo psicopedagógico y tareas para niños de 5 a 12 años. ¡Resultados visibles!",
   keywords: ["regularización Los Mochis", "clases matemáticas Los Mochis", "apoyo escolar Los Mochis", "psicopedagogía Los Mochis", "club de tareas Los Mochis"],
