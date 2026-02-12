@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://aprendemas.mx';
+    const baseUrl = 'https://aprendemas.mx/';
     const csvPath = path.join(process.cwd(), 'sitemap_regularizacion_escolar_3000_los_mochis.csv');
 
     const dynamicLinks: MetadataRoute.Sitemap = [];
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 const cleanRuta = ruta.startsWith('/') ? ruta : `/${ruta}`;
 
                 dynamicLinks.push({
-                    url: `${baseUrl}${cleanRuta}`,
+                    url: `${baseUrl}${cleanRuta.startsWith('/') ? cleanRuta.slice(1) : cleanRuta}`,
                     lastModified: new Date(),
                     changeFrequency: 'monthly',
                     priority: 0.6,
