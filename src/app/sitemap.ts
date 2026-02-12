@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import fs from 'fs';
 import path from 'path';
 
-const baseUrl = 'https://aprendemas.com';
+const baseUrl = 'https://clubaprendemas.com';
 
 export async function generateSitemaps() {
     const csvPath = path.join(process.cwd(), 'sitemap_regularizacion_escolar_3000_los_mochis.csv');
