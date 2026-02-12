@@ -55,8 +55,9 @@ export default async function CatchAllPage({ params }: Props) {
     const slug = (await params).slug;
 
     // Explicitly ignore sitemap and robots if they reach here
-    if (slug.some(s => EXCLUDED_PATHS.includes(s))) {
-        return notFound();
+    // We return null to allow Next.js metadata routes to handle these paths
+    if (slug.some(s => EXCLUDED_PATHS.some(ex => s.includes(ex)))) {
+        return null;
     }
 
     return <Home />;
