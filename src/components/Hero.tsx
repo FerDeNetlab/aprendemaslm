@@ -24,7 +24,7 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start pt-2">
-                        <a href="#contacto" className="w-full sm:w-auto px-6 py-3.5 bg-aprende-blue hover:bg-blue-600 text-white rounded-2xl font-display font-bold text-base shadow-xl shadow-blue-200 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                        <a href="https://wa.me/526684633454?text=Hola,%20me%20gustaría%20recibir%20más%20información." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-6 py-3.5 bg-aprende-blue hover:bg-blue-600 text-white rounded-2xl font-display font-bold text-base shadow-xl shadow-blue-200 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
                             Agenda tu valoración
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                         </a>

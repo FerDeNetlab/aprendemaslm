@@ -66,9 +66,14 @@ const Contact = () => {
                                 <p className="font-display font-bold text-gray-800 text-lg">Horario de atención</p>
                                 <p className="text-gray-600">Lunes a Viernes - 4:00 PM a 8:00 PM</p>
                             </div>
-                            <button className="w-full bg-aprende-blue hover:bg-blue-600 text-white py-4 rounded-2xl font-display font-bold text-xl transition-all transform hover:scale-[1.02] active:scale-95 shadow-xl shadow-blue-200">
+                            <a
+                                href="https://wa.me/526684633454?text=Hola,%20me%20gustaría%20recibir%20más%20información."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full bg-aprende-green hover:bg-green-600 text-white py-4 rounded-2xl font-display font-bold text-xl transition-all transform hover:scale-[1.02] active:scale-95 shadow-xl shadow-green-200 flex items-center justify-center"
+                            >
                                 Mandar WhatsApp
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
