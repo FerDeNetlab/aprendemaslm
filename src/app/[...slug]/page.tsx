@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `${capitalized} | Aprende+ Los Mochis`,
         description: `Aprende+ ofrece servicios de ${decoded} con un enfoque profesional y divertido. Especialistas en apoyo escolar en Los Mochis, Sinaloa.`,
         alternates: {
-            canonical: `https://aprendemas.mx/${slug.join('/')}`,
+            canonical: `https://aprendemas.com/${slug.join('/')}`,
         }
     };
 }
