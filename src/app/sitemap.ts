@@ -21,7 +21,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             const csvContent = fs.readFileSync(csvPath, 'utf8');
             const lines = csvContent.split(/\r?\n/).slice(1);
 
-            for (const line of lines) {
+            // Reducing URLs by 50% as requested
+            for (let i = 0; i < lines.length; i++) {
+                if (i % 2 !== 0) continue; // Skip every other line to get ~1500 URLs
+
+                const line = lines[i];
                 const parts = line.split(',');
                 if (parts.length < 3) continue;
 
@@ -36,7 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             }
         }
     } catch (error) {
-        console.error('Error generating consolidated sitemap:', error);
+        console.error('Error generating simplified sitemap:', error);
     }
 
     return dynamicLinks;
