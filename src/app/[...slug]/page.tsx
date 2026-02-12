@@ -4,9 +4,13 @@ import Home from '../page';
 import fs from 'fs';
 import path from 'path';
 
+import { notFound } from 'next/navigation';
+
 interface Props {
     params: Promise<{ slug: string[] }>;
 }
+
+const EXCLUDED_PATHS = ['sitemap.xml', 'robots.txt'];
 
 export async function generateStaticParams() {
     const csvPath = path.join(process.cwd(), 'sitemap_regularizacion_escolar_3000_los_mochis.csv');
@@ -47,6 +51,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // Reuse the main landing page content for all these targeted landing pages
-export default function CatchAllPage() {
+export default async function CatchAllPage({ params }: Props) {
+    const slug = (await params).slug;
+
+    // Explicitly ignore sitemap and robots if they reach here
+    if (slug.some(s => EXCLUDED_PATHS.includes(s))) {
+        return notFound();
+    }
+
     return <Home />;
 }
